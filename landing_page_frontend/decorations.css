@@ -1,4 +1,6 @@
 /* Colourful shapes stay in the page margins, behind the content. */
+.impact-stat strong [data-count]{display:inline;color:inherit;font:inherit;letter-spacing:inherit;font-variant-numeric:tabular-nums}
+.impact-stat strong .count-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .edge-art{position:relative;isolation:isolate;overflow:hidden;overflow:clip}
 .edge-art>*{position:relative;z-index:1}
 .edge-art::before,.edge-art::after{content:'';position:absolute;z-index:0;pointer-events:none;width:clamp(120px,12vw,205px);height:clamp(120px,12vw,205px)}
