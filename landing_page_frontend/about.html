@@ -2,32 +2,74 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Get Started · Miltalk</title>
+<title>For Schools · Miltalk</title>
 <meta name="description" content="Explore Miltalk experiments and mini live simulation projects, including a servo-powered recycling sorter.">
 <link rel="icon" type="image/png" href="logo.png.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="home.css?v=26"><link rel="stylesheet" href="site.css?v=2">
-</head>
+<link rel="stylesheet" href="home.css?v=26"><link rel="stylesheet" href="site.css?v=3">
+<link rel="stylesheet" href="sorter.css?v=1"></head>
 <body>
-<nav class="site-nav" aria-label="Main navigation"><div class="nav-shell"><ul class="nav-links" id="site-links"><li><a href="index.html#schools">For schools</a></li><li><a href="index.html#kits">The kits</a></li><li><a href="about.html" aria-current="page">For kit users</a></li><li><a class="nav-cta" href="contact.html">Enquire</a></li></ul><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-links">☰</button></div></nav>
+<nav class="site-nav" aria-label="Main navigation"><div class="nav-shell"><ul class="nav-links" id="site-links"><li><a href="index.html#kits">The kits</a></li><li><a href="index.html#learn">For kids</a></li><li><a href="about.html" aria-current="page">For schools</a></li><li><a class="nav-cta" href="contact.html">Enquire</a></li></ul><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-links">☰</button></div></nav>
 <main>
-<section class="section lab-intro"><div class="section-head"><p class="eyebrow">Get started with Miltalk</p><h1>Your examples.<br><span class="hl">A machine in motion.</span></h1><p>Train the kit, try an experiment and see its predictions drive a mini live simulation project. Start with our recycling sorter below.</p></div></section>
+<section class="section lab-intro"><div class="section-head"><p class="eyebrow">For primary and secondary schools · Ages 9–14</p><h1>What happens in<br><span class="hl">a Miltalk session?</span></h1><p>We start with the ideas behind AI classification, help children train a kit, then put their model to work in a project.</p></div><ol class="session-outline"><li><span>01</span><div><h3>Understand the idea</h3><p>A short introduction to how machines learn from examples and sort things into categories.</p></div></li><li><span>02</span><div><h3>Try the kit</h3><p>Children collect examples, train their model and investigate its predictions.</p></div></li><li><span>03</span><div><h3>Apply it in a project</h3><p>A practical challenge gives the model a job to do. The recycling sorter below shows a project we are developing.</p></div></li></ol></section>
 <section class="section experiment-section" id="experiments">
 <div class="section-head"><p class="eyebrow">Watch an experiment</p><h2>Teach it to sort.</h2><p>Give the Vision Kit examples of recyclable and non-recyclable items. Then test a new object and see how the training affects its prediction.</p></div>
-<div class="experiment" data-experiment data-stage="train">
-<div class="experiment-toolbar"><span class="demo-label"><span></span>Illustrated walkthrough</span><button class="motion-toggle" type="button" aria-pressed="false">Pause animation</button></div>
-<div class="experiment-scene" aria-hidden="true">
-<div class="example-queue"><span class="sample sample-paper">Paper</span><span class="sample sample-can">Can</span><span class="sample sample-tissue">Used tissue</span></div>
-<div class="scan-track"><div class="scan-kit"><img src="vision-kit-front.webp" width="780" height="1020" alt=""><span class="scan-beam"></span></div></div>
-<div class="scan-object" data-example="paper"><svg class="training-item paper-item" viewBox="0 0 90 130"><path d="M10 10h50l20 20v90H10Z" fill="#fffdf8" stroke="#18212b" stroke-width="3"/><path d="M60 10v20h20M23 49h42M23 66h42M23 83h32" fill="none" stroke="#55b6ed" stroke-width="4"/></svg><svg class="training-item can-item" viewBox="0 0 90 130"><rect x="17" y="20" width="56" height="95" rx="12" fill="#b9ebff" stroke="#18212b" stroke-width="3"/><ellipse cx="45" cy="21" rx="28" ry="9" fill="#eee" stroke="#18212b" stroke-width="3"/><path d="M18 50h54v36H18Z" fill="#ffd31d" stroke="#18212b" stroke-width="3"/></svg><svg class="training-item tissue-item" viewBox="0 0 90 130"><path d="m17 31 21-8 14 12 23-5-5 25 10 19-19 24-23-6-22 9 3-28-9-17Z" fill="#f6d8b4" stroke="#18212b" stroke-width="3"/><path d="m30 43 18 20 12-12M48 63l-9 18" fill="none" stroke="#b98357" stroke-width="3"/></svg><svg class="bottle" viewBox="0 0 70 130"><path d="M26 9h18v22l10 17v68q0 8-8 8H24q-8 0-8-8V48l10-17Z" fill="#b9ebff" stroke="#18212b" stroke-width="3"/><path d="M24 8h22v12H24Z" fill="#55b6ed" stroke="#18212b" stroke-width="3"/><path d="M17 63h36v32H17Z" fill="#fffaf6" stroke="#18212b" stroke-width="3"/><path d="m28 79 7-8 7 8-7 8Z" fill="#86c959"/></svg><span data-object-label>Training: paper</span></div>
-<div class="result-bubble">Collecting examples…</div>
-<div class="sorting-bins"><div class="sort-bin recycle-bin"><span>↻</span>Recyclable</div><div class="sort-bin general-bin"><span>×</span>Non-recyclable</div></div>
+<div class="sorter-demo" data-sorter data-stage="train">
+<div class="sorter-topbar"><span><i></i> Recycling sorter · Activity preview</span><button class="sorter-pause" type="button" aria-pressed="false">Pause</button></div>
+<div class="sorter-layout">
+<div class="sorter-visual">
+<svg viewBox="0 0 1000 570" class="sorter-svg" role="img" aria-labelledby="sorter-title sorter-desc">
+<title id="sorter-title">An animated recycling sorting experiment</title><desc id="sorter-desc">Objects move along a conveyor, are scanned by an illustrated Miltalk kit, and are directed to a bin. The steps show training examples, a wrong prediction and a retest after adding data.</desc>
+<defs>
+<pattern id="table-grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#dbe6df" stroke-width="1"/></pattern>
+<linearGradient id="kit-orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb361"/><stop offset="1" stop-color="#e56728"/></linearGradient>
+<linearGradient id="scanner-light" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#52c8cb" stop-opacity=".12"/><stop offset="1" stop-color="#52c8cb" stop-opacity=".55"/></linearGradient>
+<symbol id="item-paper" viewBox="-36 -50 72 100"><path d="M-30-44H12L30-26V44H-30Z" fill="#fffdf7" stroke="#293e38" stroke-width="3"/><path d="M12-44V-26H30M-17-10H17M-17 3H17M-17 16H7" fill="none" stroke="#88a8a3" stroke-width="3"/></symbol>
+<symbol id="item-can" viewBox="-36 -50 72 100"><rect x="-28" y="-36" width="56" height="78" rx="10" fill="#c6e5e3" stroke="#293e38" stroke-width="3"/><ellipse cy="-34" rx="28" ry="9" fill="#f4f7ed" stroke="#293e38" stroke-width="3"/><path d="M-27-9H27V20H-27" fill="#efca65" stroke="#293e38" stroke-width="3"/><path d="M-8-34H8" stroke="#293e38" stroke-width="3"/></symbol>
+<symbol id="item-tissue" viewBox="-36 -50 72 100"><path d="m-28-30 20-10 16 12 22-3-5 23 9 23-20 20-21-6-23 8 5-28-9-17Z" fill="#e7d0b5" stroke="#293e38" stroke-width="3"/><path d="m-17-19 18 19 13-14M1 0-9 19" fill="none" stroke="#b89879" stroke-width="3"/></symbol>
+<symbol id="item-bottle" viewBox="-36 -50 72 100"><path d="M-10-43H10V-25L24-9V39Q24 45 17 45H-17Q-24 45-24 39V-9L-10-25Z" fill="#bbdff0" stroke="#293e38" stroke-width="3"/><rect x="-12" y="-46" width="24" height="11" rx="3" fill="#668fa7" stroke="#293e38" stroke-width="3"/><path d="M-23 3H23V25H-23" fill="#f9faf1" stroke="#293e38" stroke-width="3"/><path d="m-7 14 7-7 7 7-7 7Z" fill="#659e76"/></symbol>
+</defs>
+<rect width="1000" height="570" fill="#f1f5ee"/><rect width="1000" height="570" fill="url(#table-grid)"/>
+<ellipse cx="485" cy="512" rx="410" ry="25" fill="#233e3310"/>
+<text x="48" y="48" class="svg-kicker">THE SORTING TABLE</text>
+<g class="kit-gantry">
+<path d="M355 320V96Q355 75 378 75H580Q600 75 600 96V320" fill="none" stroke="#a8b9ad" stroke-width="14"/>
+<rect x="396" y="48" width="161" height="199" rx="22" fill="#293e3818" transform="translate(4 7)"/>
+<rect x="396" y="48" width="161" height="199" rx="22" fill="url(#kit-orange)" stroke="#293e38" stroke-width="3"/>
+<circle cx="410" cy="63" r="4" fill="#fff3dc"/><circle cx="543" cy="63" r="4" fill="#fff3dc"/>
+<rect x="415" y="79" width="123" height="89" rx="9" fill="#1e3430"/>
+<text x="476" y="101" text-anchor="middle" fill="#abc6b5" class="svg-tiny">MILTALK VISION</text>
+<text x="476" y="129" text-anchor="middle" fill="#fffdf3" class="screen-result" data-screen>Learning</text>
+<text x="476" y="151" text-anchor="middle" fill="#a8d6d1" class="svg-tiny" data-screen-sub>Label an example</text>
+<rect x="419" y="185" width="22" height="22" rx="5" fill="#e96554" stroke="#293e38" stroke-width="2"/><rect x="450" y="185" width="22" height="22" rx="5" fill="#f2d257" stroke="#293e38" stroke-width="2"/><rect x="481" y="185" width="22" height="22" rx="5" fill="#79b394" stroke="#293e38" stroke-width="2"/><rect x="512" y="185" width="22" height="22" rx="5" fill="#75add1" stroke="#293e38" stroke-width="2"/>
+<text x="476" y="232" text-anchor="middle" fill="#4c3427" class="svg-tiny">Miltalk</text>
+<path d="m453 248-38 92h122l-38-92Z" fill="url(#scanner-light)" class="scanner-cone"/>
+<path d="M422 288H530" stroke="#44bfc0" stroke-width="3" class="scanner-line"/>
+</g>
+<g class="conveyor">
+<rect x="45" y="348" width="665" height="56" rx="28" fill="#29453d"/>
+<rect x="53" y="353" width="648" height="36" rx="18" fill="#718a7b"/>
+<path d="M77 360 91 371 77 382M145 360 159 371 145 382M213 360 227 371 213 382M281 360 295 371 281 382M349 360 363 371 349 382M417 360 431 371 417 382M485 360 499 371 485 382M553 360 567 371 553 382M621 360 635 371 621 382" fill="none" stroke="#b6c6b9" stroke-width="3" class="belt-treads"/>
+<path d="M96 405V477M647 405V477" stroke="#9caf9f" stroke-width="14" stroke-linecap="round"/>
+<circle cx="73" cy="375" r="9" fill="#d3ddd0"/><circle cx="681" cy="375" r="9" fill="#d3ddd0"/>
+</g>
+<text x="95" y="437" class="svg-label">1. Show an object</text><text x="409" y="437" class="svg-label">2. Read the result</text>
+<path d="M705 355 805 436M705 355 922 436" fill="none" stroke="#b4c4b7" stroke-width="6" stroke-linecap="round" stroke-dasharray="8 8"/>
+<g class="servo-arm" data-servo transform="translate(710 349) rotate(20)"><rect x="-8" y="-7" width="103" height="14" rx="7" fill="#edc45f" stroke="#293e38" stroke-width="3"/><circle r="12" fill="#587a9b" stroke="#293e38" stroke-width="3"/><circle r="4" fill="#eef2e7"/></g>
+<g class="bin-recycle"><path d="M755 439H850L840 527H765Z" fill="#97bda0" stroke="#293e38" stroke-width="3"/><rect x="749" y="431" width="107" height="15" rx="5" fill="#c1d8b6" stroke="#293e38" stroke-width="3"/><text x="801" y="485" text-anchor="middle" class="bin-symbol">↻</text><text x="801" y="553" text-anchor="middle" class="svg-bin-label">Recyclable</text></g>
+<g class="bin-general"><path d="M873 439H968L958 527H883Z" fill="#d7b9a2" stroke="#293e38" stroke-width="3"/><rect x="867" y="431" width="107" height="15" rx="5" fill="#ebd7c4" stroke="#293e38" stroke-width="3"/><text x="920" y="485" text-anchor="middle" class="bin-symbol">×</text><text x="920" y="553" text-anchor="middle" class="svg-bin-label">General waste</text></g>
+<g data-moving-item transform="translate(110 294)"><ellipse cy="52" rx="36" ry="6" fill="#243b3015"/><use data-item href="#item-paper" x="-34" y="-48" width="68" height="96"/></g>
+<g transform="translate(54 94)"><rect width="230" height="134" rx="14" fill="#fffdf5" stroke="#d3dfd3"/><text x="16" y="27" class="svg-kicker">TRAINING EXAMPLES</text><text x="16" y="58" class="svg-label" fill="#47775b">Recyclable</text><text x="16" y="80" class="svg-tiny" data-training>Paper · can</text><text x="16" y="106" class="svg-label" fill="#92735a">General waste: used tissue</text></g>
+<g transform="translate(665 70)"><rect width="285" height="97" rx="16" fill="#fffdf5" stroke="#d3dfd3"/><text x="18" y="29" class="svg-kicker" data-object-name>PAPER</text><text x="18" y="57" class="svg-label" data-scene-status>Moving to the scanner</text><circle cx="260" cy="25" r="6" fill="#80ab91" class="status-light"/></g>
+</svg>
+<div class="sorter-progress"><span></span></div>
 </div>
-<div class="experiment-caption"><p class="eyebrow" data-demo-number>01 · Train</p><h3 data-demo-title>Show it examples of both categories.</h3><p data-demo-copy>Students label examples as recyclable or non-recyclable. The kit uses those examples to learn the difference.</p></div>
-<div class="experiment-controls" role="group" aria-label="Experiment steps"><button type="button" data-step="train" aria-pressed="true">1. Train</button><button type="button" data-step="test" aria-pressed="false">2. Test</button><button type="button" data-step="improve" aria-pressed="false">3. Improve</button></div>
-<p class="demo-footnote">An illustration of the activity. Results on a real kit depend on the examples students provide.</p>
-</div>
+<div class="sorter-story">
+<p class="eyebrow" data-demo-number>01 · Teach the categories</p><h3 data-demo-title>Start with labelled examples.</h3><p data-demo-copy>Children label paper and cans as recyclable, and used tissues as general waste. The kit learns from these examples.</p>
+<div class="sorter-steps" role="group" aria-label="Choose a step"><button type="button" data-step="train" aria-pressed="true"><span>01</span> Teach</button><button type="button" data-step="test" aria-pressed="false"><span>02</span> Try a new object</button><button type="button" data-step="improve" aria-pressed="false"><span>03</span> Add data and retry</button></div>
+<p class="sorter-note">Illustrated activity, with an example mistake and correction. Actual predictions depend on the training data. Servo project in development.</p>
+</div></div></div>
 </section>
 <section class="section alt" id="projects">
 <div class="section-head"><p class="eyebrow">Mini live simulation projects</p><h2>From a prediction<br>to a physical action.</h2><p>Our projects connect the kit&rsquo;s predictions to small working models of real-world systems. Students can see what their training choices make a machine do.</p></div>
@@ -37,16 +79,28 @@
 </div>
 <div class="sdg-note"><span class="sdg-badge">12</span><div><p class="eyebrow">Projects with a purpose</p><h3>Connect an experiment to a bigger question.</h3><p>We design project themes around different UN Sustainable Development Goals. The recycling sorter links to <a href="https://sdgs.un.org/goals/goal12" target="_blank" rel="noopener noreferrer">SDG 12: Responsible Consumption and Production</a>, opening a discussion about waste, recycling and the effect of a sorting mistake.</p></div></div>
 </section>
+    <section class="section alt" id="schools">
+      <div class="section-head reveal"><p class="eyebrow">For schools and community groups</p><h2>A practical way to try Miltalk.</h2><p>We plan and facilitate the activities, bring the kits and guide your students. Share your year group, student numbers and available time so we can arrange a session.</p></div>
+      <div class="cards school-offer">
+        <article class="card reveal"><span class="card-sticker">What students do</span><h3>Work in small groups</h3><p>Each group collects examples, trains a classifier, puts it under pressure and compares what changed.</p></article>
+        <article class="card reveal"><span class="card-sticker coral">What we bring</span><h3>Kits and an activity</h3><p>Our team brings the kits and learning materials, sets up the activities and facilitates the session.</p></article>
+        <article class="card reveal"><span class="card-sticker blue-sticker">What you decide</span><h3>A session that fits</h3><p>Share your year group, class size, available time and learning goals. We will then confirm availability and pricing.</p></article>
+      </div>
+      <p class="offer-note reveal">Not ready to book? <a href="contact.html">Ask a question or request a school-session outline.</a></p>
+    </section>
 <section class="section" id="faq"><div class="section-head"><p class="eyebrow">About the product</p><h2>A few practical questions.</h2></div>
 <div class="product-faq">
 <details><summary>What is Miltalk?</summary><p>Miltalk is a set of handheld learning kits that students train with their own examples. They choose two categories, collect data and test the kit&rsquo;s predictions.</p></details>
 <details><summary>What is the difference between the two kits?</summary><p>The Vision Kit has a camera and learns from pictures. The Audio Kit has a microphone and learns from sounds.</p></details>
-<details><summary>Who is it designed for?</summary><p>Our activities are designed for students aged 9 to 14 in schools and community groups.</p></details>
-<details><summary>What are the simulation projects?</summary><p>They are small working models that connect a kit&rsquo;s prediction to an action. Our servo motor recycling sorter is one project currently in development.</p></details>
+<details><summary>What age group is Miltalk for?</summary><p>Miltalk is designed for children aged 9 to 14 in primary and secondary schools. We adapt the explanation and activities to the group.</p></details>
+<details><summary>Does our school have to plan the activities?</summary><p>No. We plan and lead the session, supply the kits and learning materials, and guide the students. Your school shares its group size, age range and scheduling requirements.</p></details>
+<details><summary>Why do we teach classification?</summary><p>Classification gives children a clear way to explore AI: collect examples, choose categories and test a prediction. It also helps them understand familiar applications such as spam filters and image recognition.</p></details>
+<details><summary>How do the projects relate to classification?</summary><p>The model&rsquo;s predicted category controls what happens next. In the recycling sorter we are developing, a recyclable or non-recyclable prediction determines which way a servo motor turns the sorting arm.</p></details>
+<details><summary>Why add projects after training and testing?</summary><p>Repeating train-and-test exercises can become repetitive. A project gives children a goal and a reason to improve their data. They can see the consequence of a classification mistake, such as an object being sent to the wrong bin.</p></details>
 <details><summary>How can our school try Miltalk?</summary><p><a href="contact.html">Send us an enquiry</a> with your year group, student numbers and available time. We will discuss the activities, kits, facilitation and pricing for your session.</p></details>
 </div></section>
-<section class="cta"><p class="eyebrow">Build an experiment with us</p><h2>Bring your class into the loop.</h2><p>Tell us what your students are exploring and we can discuss a Miltalk session around it.</p><a href="contact.html">Enquire about a session</a></section>
+<section class="cta"><p class="eyebrow">Build an experiment with us</p><h2>Plan a session for your class.</h2><p>Tell us what your students are exploring and we can discuss a Miltalk session around it.</p><a href="contact.html">Enquire about a session</a></section>
 </main>
-<footer class="site-footer"><div class="footer-grid"><div class="footer-about"><a href="index.html" class="logo"><img src="logo-clear.png" alt="Miltalk"></a><p>Hands-on AI literacy for students aged 9 to 14.</p></div><div class="footer-col"><h5>Explore</h5><a href="index.html#schools">For schools</a><a href="index.html#kits">The kits</a><a href="#experiments">Experiments</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Enquire</a><a href="privacy.html">Privacy Policy</a></div></div><div class="footer-bottom">© <span data-year>2026</span> Miltalk</div></footer>
-<script src="main.js"></script><script src="site.js?v=1"></script><script src="experiments.js?v=1"></script>
+<footer class="site-footer"><div class="footer-grid"><div class="footer-about"><a href="index.html" class="logo"><img src="logo-clear.png" alt="Miltalk"></a><p>Hands-on AI literacy for ages 9–14 in primary and secondary schools.</p></div><div class="footer-col"><h5>Explore</h5><a href="about.html#schools">For schools</a><a href="index.html#kits">The kits</a><a href="#experiments">Experiments</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Enquire</a><a href="privacy.html">Privacy Policy</a></div></div><div class="footer-bottom">© <span data-year>2026</span> Miltalk</div></footer>
+<script src="main.js"></script><script src="site.js?v=1"></script><script src="experiments.js?v=2"></script>
 </body></html>

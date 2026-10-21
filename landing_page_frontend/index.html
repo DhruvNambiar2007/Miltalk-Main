@@ -10,17 +10,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Lexend:wght@300;400;500;600;700;800&family=Sour+Gummy:wght@400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css?v=26">
-  <link rel="stylesheet" href="site.css?v=2">
-</head>
+  <link rel="stylesheet" href="site.css?v=3">
+<link rel="stylesheet" href="sorter.css?v=1"></head>
 <body>
-  <nav class="site-nav" aria-label="Main navigation"><div class="nav-shell"><ul class="nav-links" id="site-links"><li><a href="index.html#schools">For schools</a></li><li><a href="index.html#kits">The kits</a></li><li><a href="about.html">For kit users</a></li><li><a class="nav-cta" href="contact.html">Enquire</a></li></ul><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-links">☰</button></div></nav>
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-shell"><ul class="nav-links" id="site-links"><li><a href="index.html#kits">The kits</a></li><li><a href="index.html#learn">For kids</a></li><li><a href="about.html">For schools</a></li><li><a class="nav-cta" href="contact.html">Enquire</a></li></ul><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-links">☰</button></div></nav>
   <main>
     <section class="hero product-hero">
-      <div class="section-head reveal"><h1>Teach your machine <span class="hl">how to think.</span></h1><p class="eyebrow hero-age">Hands-on AI literacy for kids aged 9–14</p><h2 class="hero-definition">What is Miltalk?</h2><p>Miltalk is a handheld AI learning kit that children teach using their own examples. The Vision Kit has a camera for pictures. The Audio Kit has a microphone for sounds. Children choose two categories, collect examples and teach the kit to tell them apart.</p><div class="hero-ctas"><a class="btn btn-primary" href="#schools">Plan a school session</a><a class="btn btn-secondary" href="about.html#experiments">See an experiment</a></div></div>
+      <div class="section-head reveal"><h1>Teach your machine <span class="hl">how to think.</span></h1><p class="eyebrow hero-age">Hands-on AI literacy for kids aged 9–14<br><span class="school-age">For primary and secondary schools</span></p><h2 class="hero-definition">What is Miltalk?</h2><p>Miltalk is a handheld AI learning kit that children teach using their own examples. The Vision Kit has a camera for pictures. The Audio Kit has a microphone for sounds. Children choose two categories, collect examples and teach the kit to tell them apart.</p><div class="hero-ctas"><a class="btn btn-primary" href="about.html#schools">Plan a school session</a><a class="btn btn-secondary" href="about.html#experiments">See an experiment</a></div></div>
       <div class="hero-art"><img src="miltalk-hero.webp" width="3784" height="2410" fetchpriority="high" alt="Miltalk brand artwork with four colourful learning kits"></div>
     </section>
     <section class="impact-strip" aria-label="Miltalk so far"><div class="impact-heading"><p>Miltalk so far</p></div><div class="impact-stat"><strong>50</strong><span>children reached</span></div><div class="impact-stat"><strong>3</strong><span>schools piloted</span></div><div class="impact-stat"><strong>S$8k</strong><span>funding received</span></div></section>
     <section class="section purpose-section" id="why"><div class="section-head reveal"><h2>Why we started Miltalk</h2><p>Children encounter AI in their apps, classrooms and everyday lives. We started Miltalk to help them understand how a machine learns from data. By teaching a kit themselves, they can see how their examples shape its answers and why those answers need checking.</p></div><div class="purpose-note reveal"><h3>Why teach classification?</h3><p>Classification means predicting which category something belongs to. It is one of the tasks used in AI. Learning it gives children a concrete way to investigate training data, recognise mistakes and test whether a model works on something new.</p></div></section>
+    <section class="section playful-section" id="kits">
+      <div class="section-head reveal"><h2>Learn with pictures and sounds</h2><p>Both kits let children collect examples, train a model and test its predictions.</p></div>
+      <div class="kit-summary">
+        <article class="kit-summary-card reveal"><img src="vision-kit-front.webp" width="780" height="1020" loading="lazy" alt="Miltalk Vision Kit"><div><p class="eyebrow">Miltalk Vision Kit</p><h3>Train with images</h3><p>Use its camera to collect visual examples: colour, shape, angle and light all become part of the investigation.</p></div></article>
+        <article class="kit-summary-card reveal"><img src="audio-kit.webp" width="1030" height="1130" loading="lazy" alt="Miltalk Audio Kit"><div><p class="eyebrow">Miltalk Audio Kit</p><h3>Train with sound</h3><p>Use its microphone to compare sounds and explore how volume, rhythm and surroundings affect a result.</p></div></article>
+      </div>
+    </section>
     <section class="section" id="demo">
       <div class="section-head reveal"><h2>How it works</h2><p>Children teach classification by doing it. For example, they label pictures as recyclable or non-recyclable, then show the kit a new object. If its prediction is wrong, they look at the training examples, add better ones and test again.</p></div>
       <div class="cards learning-loop">
@@ -29,7 +36,6 @@
         <article class="card reveal"><span class="step-number">3</span><h3>Investigate</h3><p>Notice the wrong result and ask which examples led to it.</p></article>
         <article class="card reveal"><span class="step-number">4</span><h3>Improve</h3><p>Add or change examples, then test again.</p></article>
       </div>
-      <p class="section-callout reveal">A score can be high and still be wrong. Students learn to check each prediction against what actually happened.</p>
     </section>
     <section class="section alt everyday-ai" id="everyday-ai">
       <div class="section-head reveal"><h2>Where you see classification</h2><p>Recognising a category is useful in many familiar AI features. Miltalk lets children explore that idea with a model they train themselves.</p></div>
@@ -39,19 +45,12 @@
         <article class="card reveal"><span class="card-sticker coral">Sounds</span><h3>Keyword recognition</h3><p>A small speech model can classify a short recording as &ldquo;yes&rdquo;, &ldquo;no&rdquo; or another sound. This is a simple example of recognising spoken commands.</p><a class="example-source" href="https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/micro_speech" target="_blank" rel="noopener noreferrer">See TensorFlow&rsquo;s speech example ↗</a></article>
       </div>
     </section>
-    <section class="section playful-section" id="kits">
-      <div class="section-head reveal"><h2>Learn with pictures and sounds</h2><p>Both kits let children collect examples, train a model and test its predictions.</p></div>
-      <div class="kit-summary">
-        <article class="kit-summary-card reveal"><img src="vision-kit-front.webp" width="780" height="1020" loading="lazy" alt="Miltalk Vision Kit"><div><p class="eyebrow">Miltalk Vision Kit</p><h3>Train with images</h3><p>Use its camera to collect visual examples: colour, shape, angle and light all become part of the investigation.</p></div></article>
-        <article class="kit-summary-card reveal"><img src="audio-kit.webp" width="1030" height="1130" loading="lazy" alt="Miltalk Audio Kit"><div><p class="eyebrow">Miltalk Audio Kit</p><h3>Train with sound</h3><p>Use its microphone to compare sounds and explore how volume, rhythm and surroundings affect a result.</p></div></article>
-      </div>
-    </section>
     <section class="section alt" id="learn">
-      <div class="section-head reveal"><h2>What students learn</h2></div>
-      <div class="cards learn-cards">
+      <div class="section-head reveal"><h2>What kids learn</h2></div>
+      <div class="cards learn-cards outcomes">
         <article class="intro-card leaf reveal"><h3><span class="l1">Data shapes</span><span class="l2">a model&rsquo;s answers</span></h3><span class="rule"></span><p class="card-lead">Examples that are too narrow can produce a result that does not hold up in a new situation.</p></article>
         <article class="intro-card sun reveal"><h3><span class="l1">Test an idea</span><span class="l2">with evidence</span></h3><span class="rule"></span><p class="card-lead">Students make a prediction, change one thing and see whether the evidence supports it.</p></article>
-        <article class="intro-card coral reveal"><h3><span class="l1">Question</span><span class="l2">confidence scores</span></h3><span class="rule"></span><p class="card-lead">A model can give a high confidence score for an incorrect prediction. Students test how its scores hold up on new examples.</p></article>
+        <article class="intro-card coral reveal"><h3><span class="l1">Question</span><span class="l2">confidence scores</span></h3><span class="rule"></span><p class="card-lead">A score can be high and still be wrong. Students learn to check each prediction against what actually happened.</p></article>
       </div>
     </section>
     <section class="section" id="evidence">
@@ -60,20 +59,10 @@
         <article class="evidence-card reveal"><p class="eyebrow">August 2026 · Muhammadiyah Welfare Home</p><h3>Students kept testing after the activity ended.</h3><p>During free exploration, one student described the device as comparing a new example with what it had seen before.</p><img src="traction-1.jpg" width="1400" height="1866" loading="lazy" alt="Students at a Muhammadiyah Welfare Home Miltalk pilot"></article>
         <article class="evidence-card reveal"><p class="eyebrow">October 2026 · Sembawang Secondary School</p><h3>Students linked mistakes back to the examples.</h3><p>Students identified incorrect results, proposed better examples and connected the exercise to recognition problems they had observed with school security cameras.</p><img src="traction-4.jpg" width="1400" height="1050" loading="lazy" alt="Students using a Miltalk Vision Kit at Sembawang Secondary School"></article>
       </div>
-      <p class="evidence-note reveal">S$8,000 in funding received through SUTD.</p>
-    </section>
-    <section class="section alt" id="schools">
-      <div class="section-head reveal"><p class="eyebrow">For schools and community groups</p><h2>A practical way to try Miltalk.</h2><p>We run hands-on sessions with Miltalk kits. Tell us about your learners and we will work through the format, timing, group size, facilitation, kit access and any teacher preparation together.</p></div>
-      <div class="cards school-offer">
-        <article class="card reveal"><span class="card-sticker">What students do</span><h3>Work in small groups</h3><p>Each group collects examples, trains a classifier, puts it under pressure and compares what changed.</p></article>
-        <article class="card reveal"><span class="card-sticker coral">What we bring</span><h3>Kits and an activity</h3><p>We will confirm the right combination of Vision and Audio Kits, learning materials and facilitation for your session.</p></article>
-        <article class="card reveal"><span class="card-sticker blue-sticker">What you decide</span><h3>A session that fits</h3><p>Share your year group, class size, available time and learning goals. We will then confirm availability and pricing.</p></article>
-      </div>
-      <p class="offer-note reveal">Not ready to book? <a href="contact.html">Ask a question or request a school-session outline.</a></p>
     </section>
     <section class="cta"><p class="eyebrow">Bring Miltalk to your students</p><h2>Start with a conversation.</h2><p>Tell us about your group, preferred dates and what you would like students to explore. We will come back with a practical session proposal.</p><a href="contact.html">Enquire about a session</a></section>
   </main>
-  <footer class="site-footer"><div class="footer-grid"><div class="footer-about"><a href="index.html" class="logo"><img src="logo-clear.png" alt="Miltalk"></a><p>Hands-on AI literacy for students aged 9 to 14.</p></div><div class="footer-col"><h5>Explore</h5><a href="#schools">For schools</a><a href="#kits">The kits</a><a href="about.html">For kit users</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Enquire</a><a href="privacy.html">Privacy Policy</a></div></div><div class="footer-bottom">© <span data-year>2026</span> Miltalk</div></footer>
+  <footer class="site-footer"><div class="footer-grid"><div class="footer-about"><a href="index.html" class="logo"><img src="logo-clear.png" alt="Miltalk"></a><p>Hands-on AI literacy for ages 9–14 in primary and secondary schools.</p></div><div class="footer-col"><h5>Explore</h5><a href="#learn">For kids</a><a href="#kits">The kits</a><a href="about.html">For schools</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Enquire</a><a href="privacy.html">Privacy Policy</a></div></div><div class="footer-bottom">© <span data-year>2026</span> Miltalk</div></footer>
   <script src="main.js"></script>
 <script src="site.js?v=1"></script></body>
 </html>
