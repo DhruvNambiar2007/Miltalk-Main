@@ -1,0 +1,21 @@
+/* Illustrated learning sections on the homepage. */
+.purpose-section .section-head strong{color:#d85b39;font-weight:700}
+.classification-examples{max-width:1130px;margin:40px auto 0;padding:35px 0 0;border-top:1px solid #e8dfd4}
+.classification-examples .section-head{max-width:760px;margin-bottom:28px}
+.classification-examples .section-head h3{font-size:29px;line-height:1.2;letter-spacing:-.7px}
+.classification-examples .section-head p{font-size:15px}
+.classification-examples .cards{padding:0 25px;gap:18px}
+.classification-examples .card{box-shadow:none;border-radius:20px;padding:25px;background:#fffdf8}
+.classification-examples .card h3{font-size:22px}.classification-examples .card p{font-size:14px}
+.hands-on-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:1160px;gap:18px;margin:0 auto;padding:0 25px;list-style:none}
+.hands-on-step{position:relative;border:1px solid #e8dca6;background:#fff1b9;border-radius:24px;overflow:hidden;box-shadow:0 7px 0 #61502708}
+.hands-on-step:nth-child(2){background:#dfedf9;border-color:#c8ddea}.hands-on-step:nth-child(3){background:#fbe0da;border-color:#edd0c6}.hands-on-step:nth-child(4){background:#e4efd5;border-color:#cedfbb}
+.process-art{position:relative;height:162px;padding:16px 13px 0}.process-art svg{display:block;width:100%;height:140px;margin-top:10px}.process-number{position:absolute;left:20px;top:16px;font-size:11px;font-weight:700;color:#263f36;letter-spacing:1px}
+.process-copy{padding:18px 23px 28px}.process-copy>p{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#53645c;margin-bottom:8px}.process-copy h3{font-size:22px;letter-spacing:-.5px;line-height:1.2;margin-bottom:12px}.process-copy>span{display:block;color:#4b5d55;font-size:14px;line-height:1.65}
+.learning-outcomes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px;max-width:1120px;margin:0 auto;padding:0 25px}
+.learning-outcome{overflow:hidden;border:1px solid #dfce9f;border-radius:26px;background:#f8e9b6;box-shadow:0 8px 0 #7c682d08}.learning-outcome:nth-child(2){background:#dcecf8;border-color:#bed9e9}.learning-outcome:nth-child(3){background:#f5dcd3;border-color:#e9c6b9}
+.outcome-art{position:relative;padding:20px 30px 0;height:191px}.outcome-art>span{position:absolute;left:25px;top:22px;font-size:11px;font-weight:700;color:#5c6b60;letter-spacing:1px}.outcome-art svg{display:block;width:100%;height:160px;margin:10px auto 0;max-width:290px}
+.outcome-copy{padding:18px 28px 32px}.outcome-copy h3{font-size:28px;line-height:1.16;letter-spacing:-.8px;margin-bottom:16px;font-weight:700}.outcome-copy p{font-size:15px;line-height:1.7;color:#495b54}
+@media(max-width:1000px){.hands-on-steps{grid-template-columns:repeat(2,minmax(0,1fr));max-width:850px;gap:22px}.hands-on-step{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center}.process-art{height:180px}.process-copy{padding:28px 22px 28px 0}.process-art svg{height:140px;margin-top:20px}.learning-outcomes{gap:16px}.outcome-copy{padding:16px 22px 27px}.outcome-copy h3{font-size:24px}.outcome-art{padding:20px 18px 0;height:180px}}
+@media(max-width:700px){.classification-examples{padding-top:30px;margin-top:30px}.classification-examples .section-head h3{font-size:26px}.classification-examples .cards{grid-template-columns:1fr;max-width:520px}.hands-on-steps{grid-template-columns:1fr;max-width:560px;gap:16px}.hands-on-step{grid-template-columns:.85fr 1.15fr}.process-copy{padding:25px 20px 25px 0}.process-copy h3{font-size:22px}.process-copy>span{font-size:13px}.learning-outcomes{grid-template-columns:1fr;max-width:560px;gap:20px}.learning-outcome{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center}.outcome-art{height:180px;padding:20px 12px 0}.outcome-art svg{height:140px;margin-top:25px}.outcome-copy{padding:28px 22px 28px 0}.outcome-copy h3{font-size:23px}.outcome-copy p{font-size:13px}}
+@media(max-width:380px){.learning-outcome{display:block}.outcome-art{height:150px}.outcome-art svg{height:130px;margin-top:0}.outcome-copy{padding:20px 24px 27px}.hands-on-step{display:block}.process-copy{padding:15px 23px 27px}.process-art{height:150px}.process-art svg{height:125px;margin-top:10px}}

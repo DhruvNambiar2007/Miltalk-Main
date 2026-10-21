@@ -11,8 +11,9 @@
   }));
   let frame = 0;
   let finished = false;
-  function show(progress) {
-    counters.forEach(({element, target, prefix, suffix, decimals}) => {
+  function show(progresses) {
+    counters.forEach(({element, target, prefix, suffix, decimals}, index) => {
+      const progress = progresses[index];
       const factor = 10 ** decimals;
       const value = progress === 1 ? target : Math.floor(target * progress * factor) / factor;
       element.textContent = prefix + value.toFixed(decimals).replace(/\.0+$/, '') + suffix;
@@ -21,19 +22,25 @@
   function finish() {
     cancelAnimationFrame(frame);
     finished = true;
-    show(1);
+    show(counters.map(() => 1));
   }
   if (motion.matches || !('IntersectionObserver' in window)) return;
-  show(0);
+  show(counters.map(() => 0));
   const observer = new IntersectionObserver(entries => {
     if (!entries.some(entry => entry.isIntersecting)) return;
     observer.disconnect();
     if (finished || motion.matches) { finish(); return; }
     const start = performance.now();
     function tick(now) {
-      const progress = Math.min((now - start) / 1800, 1);
-      show(1 - (1 - progress) ** 3);
-      if (progress < 1) frame = requestAnimationFrame(tick);
+      const duration = 3200;
+      const gap = 300;
+      const elapsed = now - start;
+      const progresses = counters.map((_, index) => {
+        const progress = Math.max(0, Math.min((elapsed - index * (duration + gap)) / duration, 1));
+        return progress < .5 ? 2 * progress ** 2 : 1 - (-2 * progress + 2) ** 2 / 2;
+      });
+      show(progresses);
+      if (elapsed < counters.length * duration + (counters.length - 1) * gap) frame = requestAnimationFrame(tick);
       else finish();
     }
     frame = requestAnimationFrame(tick);
