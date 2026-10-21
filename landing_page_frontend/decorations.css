@@ -1,0 +1,27 @@
+/* Colourful shapes stay in the page margins, behind the content. */
+.edge-art{position:relative;isolation:isolate;overflow:hidden;overflow:clip}
+.edge-art>*{position:relative;z-index:1}
+.edge-art::before,.edge-art::after{content:'';position:absolute;z-index:0;pointer-events:none;width:clamp(120px,12vw,205px);height:clamp(120px,12vw,205px)}
+.edge-art::before{left:-65px;top:24%;background:#9dd9ef;border-radius:39% 61% 65% 35% / 58% 40% 60% 42%;transform:rotate(-18deg)}
+.edge-art::after{right:-60px;bottom:16%;width:145px;height:145px;border:24px solid #ffb7cc;border-radius:50%;transform:rotate(18deg)}
+.purpose-section.edge-art::before{top:35%;left:-55px;background:#9dd9ef}
+.purpose-section.edge-art::after{right:-50px;bottom:19%;border-color:#ffb7cc}
+.playful-section.edge-art::before{background:#ffdc67;border-radius:28px;transform:rotate(28deg);top:12%;left:-90px}
+.playful-section.edge-art::after{background:#b5dca0;border:0;border-radius:65% 35% 36% 64% / 43% 57% 43% 57%;right:-75px;bottom:9%;width:180px;height:180px}
+#demo.edge-art::before{width:150px;height:150px;background:none;border:24px solid #ffb59b;border-radius:50%;left:-85px;top:27%}
+#demo.edge-art::after{border:0;background:#a5d8f2;border-radius:40px;transform:rotate(-24deg);bottom:12%;right:-90px}
+.everyday-ai.edge-art::before{background:#c4b5e6;border-radius:50%;left:-95px;top:16%}
+.everyday-ai.edge-art::after{border-color:#f0ca52;right:-80px;bottom:8%}
+#learn.edge-art::before{background:#ffb6cb;left:-95px;top:13%;border-radius:40px;transform:rotate(25deg)}
+#learn.edge-art::after{background:#b5dca0;border:0;border-radius:50%;right:-95px;bottom:10%}
+#evidence.edge-art::before{background:#ffda6a;top:38%;left:-100px}
+#evidence.edge-art::after{border-color:#b4ddee;right:-80px;bottom:14%}
+.lab-intro.edge-art::before{background:#ffdc67;top:30%;left:-85px;transform:rotate(20deg);border-radius:34px}
+.lab-intro.edge-art::after{border-color:#a9d9ed;bottom:18%;right:-70px}
+#projects.edge-art::before{background:#ffb7cc;top:15%;left:-100px}
+#projects.edge-art::after{border-color:#b5dca0;bottom:10%;right:-85px}
+#schools.edge-art::before{background:#c4b5e6;top:12%;left:-100px;border-radius:40px;transform:rotate(-25deg)}
+#schools.edge-art::after{border-color:#f0ca52;bottom:12%;right:-85px}
+@media(min-width:1500px){.purpose-section.edge-art::before{left:-20px}.purpose-section.edge-art::after{right:28px}.edge-art::after{width:170px;height:170px}.playful-section.edge-art::before{left:-55px}.playful-section.edge-art::after{right:-45px}}
+@media(max-width:1050px){.edge-art::before{width:125px;height:125px;left:-90px!important}.edge-art::after{width:110px!important;height:110px!important;right:-80px!important;border-width:17px}.purpose-section.edge-art::before{left:-80px!important}.purpose-section.edge-art::after{right:-65px!important}}
+@media(max-width:650px){.edge-art::before{width:85px;height:85px;left:-65px!important;top:20px!important}.edge-art::after{width:80px!important;height:80px!important;right:-60px!important;bottom:22px!important;border-width:12px}.purpose-section.edge-art::before{left:-65px!important}.purpose-section.edge-art::after{right:-60px!important}}
