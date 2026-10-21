@@ -9,15 +9,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Lexend:wght@300;400;500;600;700;800&family=Sour+Gummy:wght@400..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css?v=25">
+  <link rel="stylesheet" href="home.css?v=26">
+  <link rel="stylesheet" href="site.css?v=1">
 </head>
 <body>
-  <nav class="site-nav"><a href="index.html" class="logo"><img src="logo-clear.png" alt="Miltalk"></a><ul class="nav-links"><li><a href="#schools">For schools</a></li><li><a href="#kits">The kits</a></li><li><a href="about.html">For kit users</a></li><li><a class="nav-cta" href="contact.html">Enquire</a></li></ul><button class="menu-toggle" aria-label="Menu">☰</button></nav>
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-shell"><a class="home-link" href="index.html" aria-current="page">Home</a><ul class="nav-links" id="site-links"><li><a href="index.html#schools">For schools</a></li><li><a href="index.html#kits">The kits</a></li><li><a href="about.html">For kit users</a></li><li><a class="nav-cta" href="contact.html">Enquire</a></li></ul><button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-links">☰</button></div></nav>
   <main>
     <section class="hero product-hero">
-      <div class="section-head reveal"><p class="eyebrow">Hands-on AI literacy for ages 12–15</p><h1>Students teach it. <span class="hl">Then make it fail.</span></h1><p>Miltalk is a handheld camera or microphone kit for school workshops. Students train a simple classifier with their own examples, test it on something new, then improve the training data when it gets a result wrong.</p><div class="hero-ctas"><a class="btn btn-primary" href="#schools">Plan a school session</a><a class="btn btn-secondary" href="#demo">See the learning loop</a></div></div>
+      <div class="section-head reveal"><p class="brand-tagline">Teach a machine how to think</p><p class="eyebrow">Hands-on AI literacy for ages 12–15</p><h1>Students teach it. <span class="hl">Then make it fail.</span></h1><p>Miltalk comes in two handheld kits: the Vision Kit learns from pictures, and the Audio Kit learns from sounds. Students teach their kit to recognise two categories, test it with new examples and improve the training data when it makes a mistake.</p><div class="hero-ctas"><a class="btn btn-primary" href="#schools">Plan a school session</a><a class="btn btn-secondary" href="about.html#experiments">See an experiment</a></div></div>
       <div class="hero-art"><img src="miltalk-hero.webp" width="3784" height="2410" fetchpriority="high" alt="Miltalk brand artwork with four colourful learning kits"></div>
     </section>
+    <section class="impact-strip" aria-label="Miltalk so far"><div class="impact-heading"><span class="impact-spark" aria-hidden="true">✳</span><p>Small kits.<br>Growing impact.</p></div><div class="impact-stat"><strong>50</strong><span>children reached</span></div><div class="impact-stat"><strong>3</strong><span>schools piloted</span></div><div class="impact-stat"><strong>S$8k</strong><span>funding received</span></div></section>
     <section class="section alt" id="schools">
       <div class="section-head reveal"><p class="eyebrow">For schools and community groups</p><h2>A practical way to try Miltalk.</h2><p>We run hands-on sessions with Miltalk kits. Tell us about your learners and we will work through the format, timing, group size, facilitation, kit access and any teacher preparation together.</p></div>
       <div class="cards school-offer">
@@ -58,11 +60,11 @@
         <article class="evidence-card reveal"><p class="eyebrow">August 2026 · Muhammadiyah Welfare Home</p><h3>Students kept testing after the activity ended.</h3><p>During free exploration, one student described the device as comparing a new example with what it had seen before.</p><img src="traction-1.jpg" width="1400" height="1866" loading="lazy" alt="Students at a Muhammadiyah Welfare Home Miltalk pilot"></article>
         <article class="evidence-card reveal"><p class="eyebrow">October 2026 · Sembawang Secondary School</p><h3>Students linked mistakes back to the examples.</h3><p>Students identified incorrect results, proposed better examples and connected the exercise to recognition problems they had observed with school security cameras.</p><img src="traction-4.jpg" width="1400" height="1050" loading="lazy" alt="Students using a Miltalk Vision Kit at Sembawang Secondary School"></article>
       </div>
-      <p class="evidence-note reveal">Miltalk has been awarded up to S$8,000 in funding through SUTD.</p>
+      <p class="evidence-note reveal">S$8,000 in funding received through SUTD.</p>
     </section>
     <section class="cta"><p class="eyebrow">Bring Miltalk to your students</p><h2>Start with a conversation.</h2><p>Tell us about your group, preferred dates and what you would like students to explore. We will come back with a practical session proposal.</p><a href="contact.html">Enquire about a session</a></section>
   </main>
   <footer class="site-footer"><div class="footer-grid"><div class="footer-about"><a href="index.html" class="logo"><img src="logo-clear.png" alt="Miltalk"></a><p>Hands-on AI literacy for students aged 12 to 15.</p></div><div class="footer-col"><h5>Explore</h5><a href="#schools">For schools</a><a href="#kits">The kits</a><a href="about.html">For kit users</a></div><div class="footer-col"><h5>Contact</h5><a href="contact.html">Enquire</a><a href="privacy.html">Privacy Policy</a></div></div><div class="footer-bottom">© <span data-year>2026</span> Miltalk</div></footer>
   <script src="main.js"></script>
-</body>
+<script src="site.js?v=1"></script></body>
 </html>
